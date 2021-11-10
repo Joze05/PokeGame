@@ -1,0 +1,87 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.pokeImg-container {
+
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+
+}
+
+.input-container {
+
+    height: 30vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(206, 15, 15);
+
+}
+
+img{
+
+width: 50%;
+
+}
+
+input {
+
+    border: none;
+    height: 20%;
+    width: 65%;
+    text-align: center;
+    font-size: large;
+
+
+}
+
+input:focus {
+
+    outline: none;
+
+}
+
+input::placeholder {
+
+    color: rgb(202, 189, 165);
+
+}
+
+input:focus::placeholder {
+
+    color: transparent;
+
+}
+
+input:hover::placeholder {}
+
+button {
+
+    transition: 0.5s;
+    height: 20%;
+    width: 20%;
+    border: none;
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Pokemon Solid', sans-serif;
+
+
+}
+
+button:hover {
+
+    transform: scale(1.1, 1.1);
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: rgb(64, 111, 199);
+
+}
