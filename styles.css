@@ -10,9 +10,18 @@
 
     height: 70vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #2b2d42;
+
+}
+
+.response {
+
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 1%;
 
 }
 
@@ -26,9 +35,26 @@
 
 }
 
-img{
+.scoreboard-container{
 
-width: 50%;
+position: absolute;
+width: 5%;
+right: 0%;
+text-align: center;
+background-color: wheat;
+
+}
+
+.points{
+
+display: inline;
+
+}
+
+img {
+
+    width: 30%;
+    height: 80%;
 
 }
 
@@ -69,7 +95,7 @@ button {
     height: 20%;
     width: 20%;
     border: none;
-    background-color:#edf2f4;
+    background-color: #edf2f4;
     color: black;
     border-radius: 5px;
     font-size: large;
