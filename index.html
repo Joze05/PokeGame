@@ -12,18 +12,20 @@
 
 <body>
 
-    <div class="scoreboard-container">Score: <p class="points">0</p></div>
+    <div class="scoreboard-container">Score: <p id="points">0</p></div>
 
     <div class="pokeImg-container">
 
         <img id="imgContainer" src="" alt="aqui va la imagen del pokemon">
-        <div class="response">Correcto!</div>
+        <div id="response"></div>
+        <div id="correctAnswer"></div>
 
     </div>
 
     <div class="input-container">
 
-        <input id="userInput" type="text" placeholder="Insert pokemon's name"> <button id="guess">GUESS</button>
+        <input id="userInput" type="text" placeholder="Insert pokemon's name">
+        <button id="guess">GUESS</button> <button id="restart">RESTART</button>
 
     </div>
 

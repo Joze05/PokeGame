@@ -66,6 +66,7 @@ input {
     text-align: center;
     font-size: large;
     background-color: #edf2f4;
+    margin: 1%
 
 }
 
@@ -99,6 +100,7 @@ button {
     color: black;
     border-radius: 5px;
     font-size: large;
+    margin: 1%
 
 
 }
@@ -109,5 +111,11 @@ button:hover {
     transition: 0.5s;
     cursor: pointer;
     background-color: #8d99ae;
+
+}
+
+#response, #correctAnswer{
+
+color: #edf2f4;
 
 }
