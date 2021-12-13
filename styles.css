@@ -88,8 +88,6 @@ input:focus::placeholder {
 
 }
 
-input:hover::placeholder {}
-
 button {
 
     transition: 0.5s;
