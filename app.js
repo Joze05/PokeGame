@@ -38,9 +38,9 @@ async function getPokemon(pokemonId) {
 
   pokemonName = pokemonData.name;
   imgContainer.src = pokemonData.sprites.front_default;
-  response.innerHTML = "...";
+  setTimeout(function(){response.innerHTML = "..."}, 700);
 
-  //console.log(pokemonName); ver nombre del pokemon (hack)
+  console.log(pokemonName); //ver nombre del pokemon (hack)
 
   return pokemonName;
 }
