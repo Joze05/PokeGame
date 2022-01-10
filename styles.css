@@ -1,9 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
 * {
 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .pokeImg-container {
@@ -35,25 +42,28 @@
 
 }
 
-.scoreboard-container{
+.scoreboard-container {
 
-position: absolute;
-width: 5%;
-right: 0%;
-text-align: center;
-background-color: wheat;
+    width: fit-content;
+    align-self: flex-end;
+    position: absolute;
+    text-align: center;
+    background-color: wheat;
+    padding: 0 1% 0 1%;
+    border-radius: 0 0 0 20px;
+    font-family: 'Patrick Hand', cursive;
 
 }
 
-.points{
+.points {
 
-display: inline;
+    display: inline;
 
 }
 
 img {
 
-    width: 30%;
+    width: 80%;
     height: 80%;
 
 }
@@ -67,7 +77,6 @@ input {
     font-size: large;
     background-color: #edf2f4;
     margin: 1%
-
 }
 
 input:focus {
@@ -99,8 +108,6 @@ button {
     border-radius: 5px;
     font-size: large;
     margin: 1%
-
-
 }
 
 button:hover {
@@ -112,8 +119,9 @@ button:hover {
 
 }
 
-#response, #correctAnswer{
+#response,
+#correctAnswer {
 
-color: #edf2f4;
+    color: #edf2f4;
 
 }
