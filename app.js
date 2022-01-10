@@ -12,6 +12,7 @@ const correctAnswer = document.getElementById("correctAnswer");
 pokemonId = getRandom();
 getPokemon(pokemonId);
 restart.style.display = "none";
+setTimeout(function(){response.innerHTML = "..."}, 700);
 
 restart.addEventListener("click", function () {
   pokemonId = getRandom();
@@ -20,6 +21,7 @@ restart.addEventListener("click", function () {
   correctAnswer.style.display = "none"
   cont = 0;
   points.innerHTML = cont
+  response.innerHTML = "...";
 });
 
 //Funcion para obtener un numero random y asignarlo al ID del pokemon--------------------------------------------------
@@ -38,7 +40,6 @@ async function getPokemon(pokemonId) {
 
   pokemonName = pokemonData.name;
   imgContainer.src = pokemonData.sprites.front_default;
-  setTimeout(function(){response.innerHTML = "..."}, 700);
 
   console.log(pokemonName); //ver nombre del pokemon (hack)
 
@@ -47,7 +48,7 @@ async function getPokemon(pokemonId) {
 
 //Función para obtener el input del usuario -------------------------------------------------------
 function getUserInput() {
-  let userInput = document.getElementById("userInput").value;
+  let userInput = document.getElementById("userInput").value.toLowerCase();
   return userInput;
 }
 
@@ -60,6 +61,7 @@ async function validatePokemon() {
     cont++;
     points.innerHTML = cont;
     response.innerHTML = "Correcto!";
+    setTimeout(function(){response.innerHTML = "..."}, 900);
     pokemonId = getRandom();
     getPokemon(pokemonId);
 
