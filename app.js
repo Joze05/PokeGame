@@ -8,6 +8,7 @@ let cont = 0;
 const restart = document.getElementById("restart");
 const response = document.getElementById("response");
 const correctAnswer = document.getElementById("correctAnswer");
+const inputElement = document.getElementById("userInput");
 
 
 pokemonId = getRandom();
@@ -83,4 +84,8 @@ let guessButton = document
     validatePokemon();
   });
 
-//Hay que arreglar un bug cuando se pasa al segundo pokemon
+inputElement.addEventListener('click', function(){
+
+  inputElement.value = "";
+
+})
