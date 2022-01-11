@@ -9,6 +9,7 @@ const restart = document.getElementById("restart");
 const response = document.getElementById("response");
 const correctAnswer = document.getElementById("correctAnswer");
 
+
 pokemonId = getRandom();
 getPokemon(pokemonId);
 restart.style.display = "none";
